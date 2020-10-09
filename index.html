@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors Game</title>
+    <link rel="shortcut icon" href="rock.svg" type="image/x-icon">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="modal.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>
+                <i id="animated-icon" class="fas"></i> Rock Paper Scissors
+                <!-- <i class="fas fa-hand-rock animated-icon"></i> -->
+            </h1>
+            <button id="restart" class="restart-btn">Restart Game</button>
+            <div id="score" class="score">
+                <p>Player: 0</p>
+                <p>Computer: 0</p>
+            </div>
+        </header>
+        <h2>Make Your Selection</h2>
+        <div class="choices">
+            <i id="rock" class="choice fas fa-hand-rock fa-10x"></i>
+            <i id="paper" class="choice fas fa-hand-paper fa-10x"></i>
+            <i id="scissors" class="choice fas fa-hand-scissors fa-10x"></i>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal">
+        <div id="result" class="modal-content">
+        </div>
+    </div>
+
+    <script src='https://kit.fontawesome.com/3da1a747b2.js'></script>
+    <script  src="app.js"></script>
+    <script src="plugins.js"></script>
+</body>
+</html>
